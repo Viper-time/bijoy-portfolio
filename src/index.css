@@ -1,0 +1,33 @@
+
+/* =========================================
+   BIJOY PORTFOLIO — GLOBAL STYLES
+   Tailwind CSS entry point
+   ========================================= */
+
+@import "tailwindcss";
+
+/* Midnight theme defaults */
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #f8fafc;
+  background: #0a1020;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Consistent sizing across the website */
+* {
+  box-sizing: border-box;
+}
