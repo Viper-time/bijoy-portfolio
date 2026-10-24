@@ -148,7 +148,7 @@ function LandingPage() {
           </Link>
           <Link
             to="/beyond-academia"
-            className="hidden transition-colors hover:text-[#D94A35] sm:block"
+            className="transition-colors hover:text-[#D94A35]"
           >
             Beyond Academia
           </Link>
