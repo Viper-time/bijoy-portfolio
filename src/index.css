@@ -31,3 +31,89 @@ body {
 * {
   box-sizing: border-box;
 }
+
+
+/* Editorial entrance animations */
+@keyframes editorial-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-editorial {
+  animation: editorial-reveal 800ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-editorial-delay-1 {
+  animation-delay: 150ms;
+}
+
+.animate-editorial-delay-2 {
+  animation-delay: 300ms;
+}
+
+.animate-editorial-delay-3 {
+  animation-delay: 450ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-editorial,
+  .animate-editorial-delay-1,
+  .animate-editorial-delay-2,
+  .animate-editorial-delay-3 {
+    animation: none;
+  }
+}
+
+/* Subtle editorial portrait frame */
+@keyframes portrait-frame-reveal {
+  from {
+    opacity: 0;
+    transform: translate(10px, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.animate-portrait-frame {
+  animation: portrait-frame-reveal 900ms ease-out 350ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-portrait-frame {
+    animation: none;
+  }
+}
+
+/* Floating decorative shapes */
+@keyframes float-gently {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(8deg);
+  }
+}
+
+.floating-shape {
+  animation: float-gently 6s ease-in-out infinite;
+}
+
+.floating-shape-delay {
+  animation: float-gently 8s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-shape,
+  .floating-shape-delay {
+    animation: none;
+  }
+}
